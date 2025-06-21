@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*////////////POCETNA//////////////*/
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+header {
+    background: #f3e8ff;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #7a4dff;
+}
+nav a.active {
+    color: #7a4dff;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #d1ff72;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #c4ff50;
+    transform: scale(1.1);
+    color: black;
+}
+/*linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) */
+.hero {
+    background-image: linear-gradient(to bottom, transparent 2%, white 90%),
+    url("./sliki/slikaHeader.jpg");
+    background-size: cover;
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    padding: 64px 32px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.hero-text {
+    margin-left: -500px;
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.hero em {
+    font-style: italic;
+    color: #7a4dff;
+    font-size: 60px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.intro-img img{
+    flex: 1;
+    width: 300px;
+    margin-right: 200px;
+    background-image: url("./sliki/img.jpg");
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/*////////////////////*/
+
+.card {
+    padding-top: 80px;
+    margin-top: 60px;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-img {
+    max-width: 300px;
+    width: 350px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-image: url("./sliki/img.jpg");
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.right {
+    flex: 2;
+    padding: 30px;
+    h1{
+        font-style: italic;
+        color: #7a4dff;
+        font-size: 40px;
+    }
+}
+
+.name {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    margin-bottom: 8px;
+    color: #7a4dff;
+}
+
+.contact p {
+    margin: 4px 0;
+    font-size: 15px;
+}
+/*////////////////////*/
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.section {
+    padding: 40px 32px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.section h2:first-of-type {
+    color: #7a4dff;
+}
+
+#WhatIdo {
+    background: rgba(248, 243, 255, 0.87);
+    margin-top: 60px;
+    height: auto;
+}
+
+#WhatIdo .container {
+    padding-bottom: 60px;
+    margin-top: 20px;
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#WhatIdo .box {
+    flex: 1;
+    height: auto;
+    max-width: 400px;
+}
+
+#WhatIdo .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+#WhatIdo .box h3 {
+    margin-top: 10px;
+}
+
+#WhatIdo .box p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.skills-list {
+    list-style: none;
+}
+#skills{
+    margin-top: 40px;
+
+}
+.polapola{
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    .levapolovina{
+        flex: 1;
+       text-align: right;
+        font-weight: bolder;
+    }
+    .desnapolovina{
+        flex:1;
+        text-align: left;
+
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 3px solid #7a4dff;;
+    background-color: #444444;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.box {
+    flex:1;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 120px;
+}
+/*////////////REACH OUT///////////////////////////////////*/
+.pozadina{
+    background-color: white;
+}
+.reachout-contact-wrapper {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: white;
+}
+
+.reachout-contact-left {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.reachout-contact-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.reachout-contact-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.reachout-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reachout-contact-input,
+.reachout-contact-textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reachout-contact-textarea {
+    resize: none;
+    height: 100px;
+}
+
+.reachout-contact-button {
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.reachout-contact-button:hover {
+    background-color: #c4ff50;
+    color: black;
+}
+
+.reachout-contact-right {
+    margin-top: 80px;
+    width: 40%;
+}
+
+.reachout-info-box {
+    background-color: #7a4dff;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.reachout-info-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reachout-info-item {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.reachout-socials {
+    margin-top: 20px;
+}
+
+.reachout-socials a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.reachout-socials a:hover {
+    color: #c4ff50;
+}
+.button-nevidlivo{
+    visibility: hidden;
+}
+.footer-rch{
+    margin-top: 40px;
+}
+/*////////////////HOBIES////////////////*/
+.bodybg{
+    background-color: #ffffff;
+
+}
+.hobby-gallery {
+    height: 1100px;
+    width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: white;
+    h2{
+        color: #7a4dff;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.gallery-title {
+    margin-bottom: 40px;
+    color: #2f2f2f;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.hobby-card {
+    background-color: white;
+    border-radius: 12px;
+    height: 380px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+}
+
+.pesnii {
+    padding-top: 20px;
+    width: 250px;
+    height: 250px;
+   object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .pesnii {
+    transform: scale(1.08);
+}
+
+.visual-bite {
+    padding: 15px;
+    text-align: left;
+}
+
+.visual-bite h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.visual-bite p {
+    color: #7a4dff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+/*////////////////////////////*/
+
+#picGallery {
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoFrame {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.picWall {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.lensBox {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #444;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cfcfcf;
+}
+
+.large {
+    grid-column: span 2; aspect-ratio: 1 / 1;
+}
+.mid {
+    grid-column: span 1; aspect-ratio: 1 / 1;
+}
+.small {
+    grid-column: span 1; aspect-ratio: 1 / 1;
+}
+.wide {
+    grid-column: span 3; aspect-ratio: 2 / 1;
+}
+
+.quoteBox {
+    grid-column: span 4;
+    background-color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    color: #000;
+}
+
+.color {
+    aspect-ratio: 1 / 1; grid-column: span 1;
+}
+.color1 {
+    background-color: #cccccc;
+}
+.color2 {
+    background-color: #333333;
+}
+.color3 {
+    background-color: #c4ff50;
+}
+.color4 {
+    background-color: #7a4dff;
+}
+
+.img1 {
+    background-image: url("./sliki/img1.jpg");
+}
+.img2 {
+    background-image: url("./sliki/img2.jpg");
+}
+.img3 {
+    background-image: url("./sliki/img3.jpg");
+}
+.img4 {
+    background-image: url("./sliki/img4.jpg");
+}
+.img5 {
+    background-image: url("./sliki/img5.jpg");
+}
+.img6 {
+    background-image: url("./sliki/img6.jpg");
+}
+.img7 {
+    background-image: url("./sliki/img7.jpg");
+}
+.img8 {
+    background-image: url("./sliki/img8.jpg");
+}
+.img9 {
+    background-image: url("./sliki/img9.jpg");
+}
+.img10 {
+    background-image: url("./sliki/img10.jpg");
+}
+.img11 {
+    background-image: url("./sliki/img11.jpg");
+}
+/*/////////Skills///////////*/
+.zaMene{
+ margin-bottom: 60px;
+}
+.triOpis{
+    padding-top: 60px;
+    margin: auto;
+    width: 1200px;
+}
+
+.Div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    gap: 40px;
+    margin-bottom: 30px;
+    h2 {
+        color: #7a4dff;
+        font-size: 32px;
+        padding: 20px;
+    }
+}
+.Div1 div{
+    flex: 1;
+
+}
+.Div1 img {
+    flex:1;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.Div1 p{
+    flex:2;
+}
+.ssss{
+    margin-top: 60px;
+}
+
+
+/* Reverses the layout: picture left, text right */
+/*.//////////////////////////*/
+
+#CrteziCelo {
+    margin: auto;
+    width: 1200px;
+    background-color: #fff;
+}
+
+.galerija {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 450px;
+}
+
+.crtez {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.crtez img.slika {
+    width: 200px;
+    height: 250px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.crtez h2 {
+    padding-top: 10px;
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #222;
+}
+
+.crtez p {
+
+    font-size: 14px;
+    color: #7a4dff;
+}
+.dada{
+    margin-top: 60px;
+}
+.dada img.slika {
+    margin-top: 20px;
+
+}
+.crtez:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #000000;
+}
